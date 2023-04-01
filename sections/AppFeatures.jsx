@@ -1,11 +1,12 @@
-"use client";
+'use client';
 
-import { SectionWrapper } from "../hoc";
-import { TypingText } from "../components/CustomTexts";
-import { motion } from "framer-motion";
-import { slideIn, textContainer, textVariant } from "../utils/motion";
-import styles from "../styles";
-import { features } from "../constants";
+import { SectionWrapper } from '../hoc';
+import { TypingText } from '../components/CustomTexts';
+import { motion } from 'framer-motion';
+import { slideIn, textContainer, textVariant } from '../utils/motion';
+import styles from '../styles';
+import { features } from '../constants';
+import Image from 'next/image';
 
 const AppFeatures = () => (
   <section>
@@ -13,7 +14,7 @@ const AppFeatures = () => (
       return (
         <div
           className={`${
-            feature.direction == "left" && "flex-row-reverse"
+            feature.direction == 'left' && 'flex-row-reverse'
           } flex justify-between items-center max-sm:flex-col gap-10 mt-40`}
           index={index}
         >
@@ -34,11 +35,17 @@ const AppFeatures = () => (
             </motion.p>
           </div>
           <motion.div
-            variants={slideIn(feature.direction, "tween", 0.2, 1)}
-            whileInView={true}
-            className="w-1/2 max-sm:w-full"
+            // variants={slideIn(feature.direction, 'tween', 0.2, 1)}
+            // whileInView={true}
+            className="w-1/5 max-sm:w-1/2 relative"
           >
-            <img src={feature.image} className="w-full h-96" />
+            <Image
+              src={feature.image}
+              quality={100}
+              width={50}
+              height={50}
+              className="object-contain w-full"
+            />
           </motion.div>
         </div>
       );
@@ -46,4 +53,4 @@ const AppFeatures = () => (
   </section>
 );
 
-export default SectionWrapper(AppFeatures, "features");
+export default SectionWrapper(AppFeatures, 'features');

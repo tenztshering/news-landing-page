@@ -1,10 +1,10 @@
-import React from "react";
-import { motion } from "framer-motion";
-import styles from "../styles";
-import { textContainer, textVariant } from "../utils/motion";
-import { SectionWrapper } from "../hoc";
-import Image from "next/image";
-import { TypingText } from "../components/CustomTexts";
+import React from 'react';
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { textContainer, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
+import Image from 'next/image';
+import { TypingText } from '../components/CustomTexts';
 
 const About = () => {
   return (
@@ -27,10 +27,16 @@ const About = () => {
         </motion.p>
       </div>
       <div className="w-1/2 max-sm:w-full">
-        <img src="/mockup/Scene.svg" />
+        <Image
+          alt="BhutanNews"
+          quality={100}
+          src="/mockup/Scene.svg"
+          width={500}
+          height={500}
+        />
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, 'about');

@@ -1,20 +1,19 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import styles from "../styles";
-import PhoneCanvas from "../components/canvas/Phone";
-import { slideIn } from "../utils/motion";
-import { SectionWrapper } from "../hoc";
-import { AppStore } from "../components";
-import { TypingText } from "../components/CustomTexts";
-import Image from "next/image";
+import { motion } from 'framer-motion';
+import styles from '../styles';
+import { slideIn } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
+import { AppStore } from '../components';
+import { TypingText } from '../components/CustomTexts';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
     <section className="w-full h-screen relative flex justify-between max-sm:justify-center max-sm:flex-col max-sm:items-center overflow-hidden">
       <motion.div
         className={`${styles.paddingX} flex `}
-        variants={slideIn("left", "tween", 0.2, 1)}
+        variants={slideIn('left', 'tween', 0.2, 1)}
       >
         <div className="flex flex-col items-start">
           <h1 className={`${styles.heroHeadText}`}>
@@ -33,12 +32,18 @@ const Hero = () => {
         </div>
       </motion.div>
       <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+        variants={slideIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        {/* <PhoneCanvas /> */}
-        <div className="w-auto h-4/6 relative  max-sm:w-full">
-          <img alt="BhutanNews" fill title="BhutanNews" src="/Hero.svg" />
+        <div className="w-auto h-96 relative  max-sm:w-full">
+          <Image
+            quality={100}
+            alt="BhutanNews"
+            title="BhutanNews"
+            src="/Hero.svg"
+            width={500}
+            height={500}
+          />
         </div>
       </motion.div>
       <div className="absolute bottom-32 max-sm:bottom-12 w-full flex justify-center items-center">
@@ -51,7 +56,7 @@ const Hero = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
               }}
               className="w-3 h-3 rounded-ful bg-secondary mb-1"
             />
@@ -62,4 +67,4 @@ const Hero = () => {
   );
 };
 
-export default SectionWrapper(Hero, "");
+export default SectionWrapper(Hero, '');
