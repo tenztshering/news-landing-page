@@ -12,8 +12,8 @@ import StarsCanvas from "../components/canvas/Stars";
 
 const Home = () => (
   <div className="relative z-0 bg-black-gradient overflow-x-hidden">
+    <Navbar />
     <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-      <Navbar />
       <Hero />
     </div>
     <About />

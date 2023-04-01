@@ -18,9 +18,6 @@ const Footer = () => {
               className="w-full h-[44px] object-contain"
             />
           </a>
-          <a href="#">
-            <h4 className={`${styles.sectionSubText}`}>FAQ</h4>
-          </a>
           <a href="/legal">
             <h4 className={`${styles.sectionSubText}`}>Legal</h4>
           </a>
@@ -38,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p className="text-gray-500">@{date}</p>
+        <p className="text-gray-500">©{date} | BhutanNews</p>
       </div>
     </>
   );

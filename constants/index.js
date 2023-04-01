@@ -51,12 +51,12 @@ export const features = [
 export const subscriptions = [
   {
     name: "Individuals plan",
-    description: "Please use mobile app to subscribe for individual plan",
+    description: "Download the app to subscribe the plan",
     link: "#",
   },
   {
     name: "Agency plan",
-    description: "Please follow the link",
+    description: "Follow the agency link to for bulk subscription",
     link: "#",
   },
 ];

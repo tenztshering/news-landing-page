@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen mt-10 flex justify-between max-sm:flex-col max-sm:items-center overflow-hidden">
+    <section className="w-full h-screen relative flex justify-between max-sm:justify-center max-sm:flex-col max-sm:items-center overflow-hidden">
       <motion.div
         className={`${styles.paddingX} flex `}
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -41,6 +41,23 @@ const Hero = () => {
           <img alt="BhutanNews" fill title="BhutanNews" src="/Hero.svg" />
         </div>
       </motion.div>
+      <div className="absolute bottom-32 max-sm:bottom-12 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-ful bg-secondary mb-1"
+            />
+          </div>
+        </a>
+      </div>
     </section>
   );
 };

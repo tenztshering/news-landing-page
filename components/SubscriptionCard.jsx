@@ -21,11 +21,10 @@ const SubscriptionCard = ({ index, title, description, link }) => (
           {title}
         </h3>
         <p className="text-white text-sm">{description}</p>
-        <p>Nu. 1000/- only</p>
       </div>
       <div className="text-center">
         <a href={link} className="bg-white text-black px-10 py-2 rounded-lg">
-          Subscriptions
+          Get it now
         </a>
       </div>
     </motion.div>
