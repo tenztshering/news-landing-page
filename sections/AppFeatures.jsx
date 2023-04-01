@@ -40,6 +40,7 @@ const AppFeatures = () => (
               quality={100}
               width={50}
               height={50}
+              loading="lazy"
               className="object-contain w-full"
             />
           </div>

@@ -10,6 +10,7 @@ const AppStore = () => (
         width={100}
         height={100}
         quality={50}
+        loading="lazy"
         className="w-full h-[44px] max-sm:h-[35px] object-contain hover:opacity-50"
       />
     </a>
@@ -20,6 +21,7 @@ const AppStore = () => (
         width={100}
         height={100}
         quality={50}
+        loading="lazy"
         className="w-full h-[44px] max-sm:h-[35px] object-contain hover:opacity-50"
       />
     </a>

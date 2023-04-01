@@ -43,6 +43,7 @@ const Hero = () => {
             src="/Hero.svg"
             width={500}
             height={500}
+            loading="lazy"
           />
         </div>
       </motion.div>
