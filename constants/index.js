@@ -17,6 +17,7 @@ export const navLinks = [
 
 export const features = [
   {
+    head: '',
     title: 'All news in one app',
     image: '/mockup/Screen1.svg',
     description: '',

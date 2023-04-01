@@ -29,7 +29,7 @@ const About = () => {
       <div className="w-1/2 max-sm:w-full">
         <Image
           alt="BhutanNews"
-          quality={100}
+          quality={50}
           src="/mockup/Scene.svg"
           width={500}
           height={500}

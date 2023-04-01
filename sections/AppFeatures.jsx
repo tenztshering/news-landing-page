@@ -19,9 +19,9 @@ const AppFeatures = () => (
           index={index}
         >
           <div className="w-1/2 max-sm:w-full">
-            <motion.div variants={textVariant()} whileInView={true}>
+            <div>
               <h2 className={styles.sectionSubHeadText}>{feature.title}</h2>
-            </motion.div>
+            </div>
             <motion.p
               variants={textContainer}
               initial="hidden"
@@ -34,11 +34,7 @@ const AppFeatures = () => (
               culpa ullam explicabo quo provident labore debitis placeat?
             </motion.p>
           </div>
-          <motion.div
-            // variants={slideIn(feature.direction, 'tween', 0.2, 1)}
-            // whileInView={true}
-            className="w-1/5 max-sm:w-1/2 relative"
-          >
+          <div className="w-1/4 max-sm:w-[60vw]">
             <Image
               src={feature.image}
               quality={100}
@@ -46,7 +42,7 @@ const AppFeatures = () => (
               height={50}
               className="object-contain w-full"
             />
-          </motion.div>
+          </div>
         </div>
       );
     })}

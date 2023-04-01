@@ -37,7 +37,7 @@ const Hero = () => {
       >
         <div className="w-auto h-96 relative  max-sm:w-full">
           <Image
-            quality={100}
+            quality={50}
             alt="BhutanNews"
             title="BhutanNews"
             src="/Hero.svg"
