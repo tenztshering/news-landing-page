@@ -1,14 +1,12 @@
 import {
   Hero,
   About,
-  Features,
   Subscriptions,
   Brands,
   AppFeatures,
   Feedback,
-} from "../sections";
-import { Navbar, Footer } from "../components";
-import StarsCanvas from "../components/canvas/Stars";
+} from '../sections';
+import { Navbar } from '../components';
 
 const Home = () => (
   <div className="relative z-0 bg-black-gradient overflow-x-hidden">

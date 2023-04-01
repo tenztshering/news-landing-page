@@ -1,8 +1,9 @@
-"use client";
-import { SectionWrapper } from "../hoc";
-import styles from "../styles";
-import AppStore from "./AppStore";
-import { IoMail } from "react-icons/io5";
+'use client';
+
+import { IoMail } from 'react-icons/io5';
+import styles from '../styles';
+import AppStore from './AppStore';
+import { SectionWrapper } from '../hoc';
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -41,4 +42,4 @@ const Footer = () => {
   );
 };
 
-export default SectionWrapper(Footer, "");
+export default SectionWrapper(Footer, '');

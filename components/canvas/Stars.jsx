@@ -1,13 +1,14 @@
-import React, { useState, useRef, Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload } from "@react-three/drei";
-import * as random from "maath/random";
+/* eslint-disable react/no-unknown-property */
+import React, { useRef, Suspense, memo } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Points, PointMaterial, Preload } from '@react-three/drei';
+import * as random from 'maath/random';
 
 const Stars = (props) => {
   const ref = useRef();
   const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
 
-  useFrame((state, delta) => {
+  useFrame((delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });
@@ -19,7 +20,6 @@ const Stars = (props) => {
           transparent
           color="#f272c8"
           size={0.002}
-          sizeAttenuation={true}
           depthWite={false}
         />
       </Points>
@@ -27,17 +27,15 @@ const Stars = (props) => {
   );
 };
 
-const StarsCanvas = () => {
-  return (
-    <div className="w-ful h-full absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <Suspense fallback={null}>
-          <Stars />
-          <Preload all />
-        </Suspense>
-      </Canvas>
-    </div>
-  );
-};
+const StarsCanvas = () => (
+  <div className="w-ful h-full absolute inset-0 z-[-1]">
+    <Canvas camera={{ position: [0, 0, 1] }}>
+      <Suspense fallback={null}>
+        <Stars />
+        <Preload all />
+      </Suspense>
+    </Canvas>
+  </div>
+);
 
-export default StarsCanvas;
+export default memo(StarsCanvas);

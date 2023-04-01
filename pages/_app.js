@@ -1,6 +1,6 @@
-import Head from "next/head";
-import { Navbar, Footer } from "../components";
-import "../styles/globals.css";
+import Head from 'next/head';
+import { Footer } from '../components';
+import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => (
   <>
