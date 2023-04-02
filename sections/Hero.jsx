@@ -43,7 +43,10 @@ const Hero = () => {
             src="/Hero.svg"
             width={500}
             height={500}
-            loading="lazy"
+            priority={true}
+            loading="eager"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,[IMAGE_CODE_FROM_PNG_PIXEL]"
           />
         </div>
       </motion.div>
