@@ -10,7 +10,8 @@ const AppStore = () => (
         width={100}
         height={100}
         quality={50}
-        priority={true}
+        priority
+        s
         className="w-full h-[44px] max-sm:h-[35px] object-contain hover:opacity-50"
       />
     </a>
@@ -21,7 +22,7 @@ const AppStore = () => (
         width={100}
         height={100}
         quality={50}
-        priority={true}
+        priority
         className="w-full h-[44px] max-sm:h-[35px] object-contain hover:opacity-50"
       />
     </a>
