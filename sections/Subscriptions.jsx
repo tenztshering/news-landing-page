@@ -1,12 +1,12 @@
-"use client";
-import styles from "../styles";
-import { subscriptions } from "../constants";
-import { SubscriptionCard } from "../components";
-import { SectionWrapper } from "../hoc";
-import { TypingText } from "../components/CustomTexts";
+'use client';
+import styles from '../styles';
+import { subscriptions } from '../constants';
+import { SubscriptionCard } from '../components';
+import { SectionWrapper } from '../hoc';
+import { TypingText } from '../components/CustomTexts';
 
 const Subscriptions = () => (
-  <section className="flex flex-col items-center max-sm:text-center">
+  <div className="flex flex-col items-center max-sm:text-center">
     <h1 className={`${styles.sectionHeadText}`}>Pricing Plans</h1>
     <p className={`${styles.sectionSubText}`}>
       {/* <TypingText title="Account plans unlock additional features" /> */}
@@ -25,7 +25,7 @@ const Subscriptions = () => (
         />
       ))}
     </div>
-  </section>
+  </div>
 );
 
-export default SectionWrapper(Subscriptions, "");
+export default SectionWrapper(Subscriptions, '');

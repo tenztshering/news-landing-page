@@ -9,14 +9,14 @@ import { features } from '../constants';
 import Image from 'next/image';
 
 const AppFeatures = () => (
-  <section>
-    {features.map((feature, index) => {
+  <div>
+    {features.map((feature) => {
       return (
         <div
           className={`${
             feature.direction == 'left' && 'flex-row-reverse'
           } flex justify-between items-center max-sm:flex-col gap-10 mt-40`}
-          index={index}
+          key={feature.title}
         >
           <div className="w-1/2 max-sm:w-full">
             <div>
@@ -47,7 +47,7 @@ const AppFeatures = () => (
         </div>
       );
     })}
-  </section>
+  </div>
 );
 
 export default SectionWrapper(AppFeatures, 'features');
