@@ -11,7 +11,6 @@ const AppStore = () => (
         height={100}
         quality={50}
         priority
-        s
         className="w-full h-[44px] max-sm:h-[35px] object-contain hover:opacity-50"
       />
     </a>
