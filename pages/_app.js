@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import '../styles/globals.css';
 import { Footer } from '../components';
