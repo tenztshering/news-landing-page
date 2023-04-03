@@ -23,7 +23,7 @@ const Hero = () => {
             One place for all the <br className="sm:block hidden" /> News in
             Bhutan
           </p>
-          <div className="bg-gray-100 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-5 mt-10">
+          <div className="bg-gray-100 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-5 mt-10 w-full">
             <AppStore />
           </div>
           <div className="h-20 w-full mt-10">
