@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen relative flex justify-between max-sm:justify-center max-sm:flex-col max-sm:items-center overflow-hidden">
+    <section className="w-full h-screen relative flex justify-between lg:mt-10 max-sm:justify-center max-sm:flex-col max-sm:items-center overflow-hidden">
       <motion.div
         className={`${styles.paddingX} flex `}
         variants={slideIn('left', 'tween', 0.2, 1)}
@@ -23,7 +23,7 @@ const Hero = () => {
             One place for all the <br className="sm:block hidden" /> News in
             Bhutan
           </p>
-          <div className="bg-gray-100 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-5 mt-10 w-full">
+          <div className="bg-gray-100 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-5 mt-10 max-sm:w-full">
             <AppStore />
           </div>
           <div className="h-20 w-full mt-10">

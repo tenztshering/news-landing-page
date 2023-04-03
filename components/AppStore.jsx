@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { memo } from 'react';
 
 const AppStore = () => (
-  <div className="flex justify-center items-center gap-2 w-full">
+  <div className="flex justify-center items-center gap-2">
     <a href="https://play.google.com/store/apps/details?id=bt.jobajoba.news.myapp&hl=en&gl=US">
       <Image
         src="/google.svg"
