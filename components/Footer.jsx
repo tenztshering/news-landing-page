@@ -1,5 +1,3 @@
-'use client';
-
 import { IoMail } from 'react-icons/io5';
 import styles from '../styles';
 import AppStore from './AppStore';

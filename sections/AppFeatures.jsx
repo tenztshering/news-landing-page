@@ -1,5 +1,3 @@
-'use client';
-
 import { SectionWrapper } from '../hoc';
 import { TypingText } from '../components/CustomTexts';
 import { motion } from 'framer-motion';

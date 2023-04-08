@@ -1,10 +1,8 @@
-"use client";
-
-import { SectionWrapper } from "../hoc";
-import styles from "../styles";
-import { Terms, Privacy } from "../components";
-import Link from "next/link";
-import { useState } from "react";
+import { SectionWrapper } from '../hoc';
+import styles from '../styles';
+import { Terms, Privacy } from '../components';
+import Link from 'next/link';
+import { useState } from 'react';
 
 const LegalDocs = ({ children }) => {
   const [active, setActive] = useState();
@@ -21,7 +19,7 @@ const LegalDocs = ({ children }) => {
           <Link
             href="#"
             onClick={() => {
-              setActive("");
+              setActive('');
               window.scrollTo(0, 0);
             }}
             className="hover:text-white"
@@ -34,7 +32,7 @@ const LegalDocs = ({ children }) => {
           <Link
             href="#"
             onClick={() => {
-              setActive("");
+              setActive('');
               window.scrollTo(0, 500);
             }}
             className="hover:text-white"

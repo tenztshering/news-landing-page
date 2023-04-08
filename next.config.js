@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const optimizedImages = require('next-optimized-images');
-const withPlugins = require('next-compose-plugins');
 
 const nextConfig = {
   experimental: {
@@ -8,4 +6,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPlugins([optimizedImages], nextConfig);
+module.exports = nextConfig;

@@ -1,8 +1,6 @@
-"use client";
-
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { FeatureCard } from "../components";
+import { services } from '../constants';
+import { SectionWrapper } from '../hoc';
+import { FeatureCard } from '../components';
 
 const Features = () => {
   <>
@@ -14,4 +12,4 @@ const Features = () => {
   </>;
 };
 
-export default SectionWrapper(Features, "features");
+export default SectionWrapper(Features, 'features');

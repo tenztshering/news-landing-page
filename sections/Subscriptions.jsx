@@ -1,4 +1,3 @@
-'use client';
 import styles from '../styles';
 import { subscriptions } from '../constants';
 import { SubscriptionCard } from '../components';

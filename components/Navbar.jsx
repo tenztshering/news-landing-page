@@ -1,5 +1,3 @@
-'use client';
-
 import { IoMenu, IoClose } from 'react-icons/io5';
 import React, { useState } from 'react';
 import Link from 'next/link';
