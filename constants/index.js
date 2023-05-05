@@ -20,31 +20,36 @@ export const features = [
     head: '',
     title: 'All news in one app',
     image: '/mockup/Screen1.svg',
-    description: '',
+    description:
+      "Get all your news in one convenient place with our mobile app. Our 'All news in one app' feature allows you to access news articles from multiple sources, all in one app. Say goodbye to switching between different news apps or websites – with our app, you can browse and read news articles from various categories, such as sports, politics, entertainment, and more, all in one seamless experience. Our app's user-friendly interface and customizable settings make it easy to find the news you're interested in and stay informed on the latest developments. Try our 'All news in one app' feature today and never miss a beat.",
     direction: 'right',
   },
   {
     title: 'Save 90% of your budget',
     image: '/mockup/Screen2.svg',
-    description: '',
+    description:
+      "Say goodbye to costly news subscriptions and enjoy unlimited access to news articles with our app. With our 'Save 90% of your budget' feature, you can stay informed on the latest news without breaking the bank. Our app delivers news articles in the form of PDFs, which means you can access them for free. Say goodbye to paywalls and subscriptions and enjoy the convenience of our app, which saves you up to 90% of your budget. Whether you're a student, professional, or simply looking to save money, our app is the perfect solution for staying informed without overspending. Try our 'Save 90% of your budget' feature today and enjoy unlimited access to news articles, all for free.",
     direction: 'left',
   },
   {
     title: 'Inbuilt PDF to save storage',
     image: '/mockup/Screen3.svg',
-    description: '',
+    description:
+      "Our app's 'Inbuilt PDF' feature is the perfect solution for saving storage on your device. With our app, you don't need to download multiple news articles and occupy valuable storage space on your phone. Instead, our app delivers news articles in the form of PDFs, which are stored within the app and can be accessed at any time. This not only saves you storage space but also makes it easier to organize and manage your news articles. Our app's user-friendly interface allows you to search and access news articles with ease, all while keeping your device clutter-free. With our 'Inbuilt PDF' feature, you can stay informed without sacrificing storage space on your device. Try our app today and experience the convenience of our inbuilt PDF feature for yourself.",
     direction: 'right',
   },
   {
     title: 'Latest news papers in your pocket',
     image: '/mockup/Screen4.svg',
-    description: '',
+    description:
+      "Stay up-to-date on the latest news with our app's 'Latest newspapers in your pocket' feature. Our app delivers news articles from top newspapers straight to your device, so you can read them on-the-go without any hassle. Our app covers a wide range of newspapers, from local to international, so you can stay informed on news and events from around the world. Our app's user-friendly interface allows you to easily browse and search for news articles, so you can quickly find what you're looking for. With our 'Latest newspapers in your pocket' feature, you can carry the latest news in your pocket wherever you go. Try our app today and experience the convenience of having the latest newspapers right at your fingertips.",
     direction: 'left',
   },
   {
     title: 'Easy to access the news',
     image: '/mockup/Screen5.svg',
-    description: '',
+    description:
+      "Our app's 'Easy to access the news' feature allows you to quickly and easily access news articles from various sources. With a user-friendly interface and customizable settings, our app makes it easy to browse and read news articles with just a few taps. Our app covers a wide range of news categories, from sports to entertainment, so you can stay informed on the latest developments. Plus, our app's inbuilt PDF feature ensures that you can access news articles without the need for an internet connection, making it even easier to stay informed on-the-go. With our 'Easy to access the news' feature, you can stay up-to-date on the latest news without any hassle. Try our app today and experience the convenience of our easy-to-access news feature for yourself.",
     direction: 'right',
   },
 ];

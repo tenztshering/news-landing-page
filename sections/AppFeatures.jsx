@@ -26,10 +26,7 @@ const AppFeatures = () => (
               whileInView="show"
               className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Excepturi ipsam omnis consequatur. Consequatur, tempora repellat
-              voluptatem cumque delectus accusamus doloribus necessitatibus, et
-              culpa ullam explicabo quo provident labore debitis placeat?
+              {feature.description}
             </motion.p>
           </div>
           <div className="w-1/4 max-sm:w-[60vw]">

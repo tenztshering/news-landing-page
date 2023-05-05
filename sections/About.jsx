@@ -20,10 +20,14 @@ const About = () => {
           whileInView="show"
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
-          ipsam omnis consequatur. Consequatur, tempora repellat voluptatem
-          cumque delectus accusamus doloribus necessitatibus, et culpa ullam
-          explicabo quo provident labore debitis placeat?
+          Introducing the most convenient way to stay up-to-date on the latest
+          news. Our mobile app delivers news in the form of PDFs straight to
+          your device, allowing you to read on-the-go without any distractions
+          or interruptions. With a sleek and intuitive design, our app makes it
+          easy to access and browse through news articles from a variety of
+          sources. Whether you're interested in current events, sports,
+          entertainment, or technology, our app has something for everyone. Stay
+          informed and never miss a beat with our mobile app.
         </motion.p>
       </div>
       <div className="w-1/2 max-sm:w-full">
