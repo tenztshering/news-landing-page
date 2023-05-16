@@ -45,13 +45,6 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-          <button
-            onClick="/legal"
-            type="button"
-            className="bg-blue-100 px-3 rounded-full text-primary hover:opacity-50"
-          >
-            Agency Subscription
-          </button>
         </ul>
         <div className="sm:hidden md:hidden flex flex-1 justify-end items-center">
           {toggle ? (
